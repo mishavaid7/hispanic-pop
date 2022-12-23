@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title> Hispanic Population by Census Tracts </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="menu"></nav>
+    <div id='map'></div>
+    <div id='title' class="title">
+        <h1> Dallas + Fortworth <br> Hispanic Population <br> by census tracts </h1>
+        <p> Source: US Census Bureau (American Community Survey, 2021 5-Year Estimates) </p>
+         <p> Table B03002 (Hispanic or Latino Origin by Race). </p>
+        <p> <a href="https://docs.google.com/spreadsheets/d/1FfrpTAe3wft8GbcKlYAjDTfR8CLbsmYmaCoZop9kQv8/edit?usp=sharing" target="_blank">Download the data here. </a></p>
+        <p> <b>You can hover and click each census tract to see the total population breakdown. </b> </p>
+        <hr>
+        <div id="income-legend" class="legend">
+            <h4> % of total pop. that is Hispanic or Latino </h4>
+            <div><span style="background-color: #f1eef6"></span> 0% - 17%  </div>
+            <div><span style="background-color: #bdc9e1"></span> 17% - 30% </div>
+            <div><span style="background-color: #74a9cf"></span> 30% - 47% </div>
+            <div><span style="background-color: #2b8cbe"></span> 47% - 69% </div>
+            <div><span style="background-color: #045a8d"></span> 69% - 98 </div>
+
+        </div>
+
+        
+    </div>
+    <script type='text/javascript' src="map.js"></script>
+</body>
+
+</html>
